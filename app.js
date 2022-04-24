@@ -14,6 +14,14 @@ app.get("/launchx", (req, res) =>{
     res.send("Bienvenidos a LaunchX!");
 })
 
+
+app.get('/explorers/:explorer',(req, res) =>{
+
+    console.log(req.params)
+    res.send(req.params)
+})
+
+
 app.get('/node', (req, res)=>{
 
     const explorer1 = {id: "1", name: "Esteban", lastname: "Rodriguez"}
